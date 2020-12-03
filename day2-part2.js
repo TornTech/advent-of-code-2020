@@ -19,7 +19,6 @@ function convertToObjectList(array) {
     object["max"] = parseInt(array[i][0].substring(dashIndex + 1));
     object["letter"] = array[i][1].substring(0,1);
     object["password"] = array[i][2];
-    // console.log(object);
     newArray[i] = object
   }
 }
@@ -56,7 +55,6 @@ function checkIfValid2(min, max, letter, password) {
   }
 }
 
-// checkIfValid2(1,3,"a","abcde")
 
 function countValid(objectlist) {
   validCount = 0;
@@ -66,13 +64,13 @@ function countValid(objectlist) {
     letter = objectlist[i].letter;
     password = objectlist[i].password;
     if (checkIfValid2(min, max, letter, password) === 1) {
-      validCount++
+      validCount++;
     }
   }
+  return validCount;
 }
 
 countValid(newArray)
-console.log(validCount)
 
 
 
