@@ -2,8 +2,6 @@ const fs = require('fs');
 const data = fs.readFileSync('day4.txt').toString();
 const input = data.split('\r\n');
 
-// console.log(input)
-
 function splitByPerson(list) {
   passportList = [];
   var i = 0;
