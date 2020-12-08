@@ -30,7 +30,7 @@ function partOne(input) {
                 uniqueAnswers[answer[i]] = 1;
             }
         }
-        listOfUniqueAnswers.push(uniqueAnswers)
+        listOfUniqueAnswers.push(uniqueAnswers);
     })
 
     // Counts unique answers from each group
@@ -56,8 +56,8 @@ function partTwo(input) {
         } 
       
         if (input[i + 1] === '' || input[i + 1] === undefined) {
-            questionsAllAnswered.push(uniqueAnswers)
-            uniqueAnswers = {people: 0}
+            questionsAllAnswered.push(uniqueAnswers);
+            uniqueAnswers = {people: 0};
         } else {
             uniqueAnswers.people++;
         }
@@ -72,7 +72,7 @@ function partTwo(input) {
             }
         }
     })
-    return finalCount
+    return finalCount;
 }
 
 console.log("Part one answer: "+ partOne(input));
